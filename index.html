@@ -14,7 +14,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -29,6 +29,7 @@
           fontFamily: {
             display: ['Candal', 'system-ui', 'sans-serif'],
             body: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Lora', 'Georgia', 'serif'],
           },
         },
       },
@@ -72,10 +73,10 @@
         <span class="inline-flex items-center gap-2 rounded-full border border-lime/40 bg-ink/60 px-4 py-1.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-lime">
           World Cup 2026 &middot; Glasgow
         </span>
-        <h1 class="mt-5 font-display text-4xl sm:text-6xl lg:text-7xl text-lime leading-[1.05] lime-shadow text-balance">
-          Watch the World Cup at the Fox!
+        <h1 class="mt-5 font-display text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] text-balance">
+          Watch the <span class="text-lime lime-shadow">World Cup</span> at the Fox!
         </h1>
-        <p class="mt-5 max-w-2xl text-base sm:text-xl text-slate-200 leading-relaxed text-pretty">
+        <p class="mt-5 max-w-2xl text-base sm:text-xl text-slate-200 font-serif leading-relaxed text-pretty">
           It&apos;s been a while since &apos;98 &mdash; but the wait is over. Scotland are heading to the World Cup, and there&apos;s no better place in Glasgow city centre to cheer them on.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
@@ -100,8 +101,8 @@
             <div class="absolute inset-0 bg-gradient-to-t from-ink-soft/80 to-transparent md:bg-gradient-to-r"></div>
           </div>
           <div class="md:col-span-3 p-6 sm:p-8">
-            <h2 class="font-display text-2xl sm:text-3xl text-lime">Reserve Your Spot</h2>
-            <p class="mt-2 text-slate-300 leading-relaxed">
+            <h2 class="font-display text-2xl sm:text-3xl text-white">Reserve Your Spot</h2>
+            <p class="mt-2 text-slate-300 font-serif leading-relaxed">
               Booking is advised to guarantee entry on matchday. Grab your table before kick-off and settle in for the atmosphere.
             </p>
             <form class="mt-6 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault(); this.reset(); document.getElementById('book-confirm').classList.remove('hidden');">
@@ -146,8 +147,8 @@
   <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24">
     <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div>
-        <h2 class="font-display text-3xl sm:text-4xl text-lime text-balance">The biggest football atmosphere in the city centre</h2>
-        <div class="mt-5 space-y-4 text-slate-300 leading-relaxed">
+        <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">The biggest football <span class="text-lime">atmosphere</span> in the city centre</h2>
+        <div class="mt-5 space-y-4 text-slate-300 font-serif leading-relaxed">
           <p>The Tartan Army is ready, Glasgow is ready, and we&apos;re gearing up for one of the biggest football atmospheres the city centre has seen in years.</p>
           <p>We&apos;ll be showing all the action live, with the pints pouring and the place bouncing from kick-off to the final whistle. Whether it&apos;s pre-match nerves or last-minute drama, this is where you&apos;ll want to be.</p>
         </div>
@@ -178,33 +179,33 @@
   <!-- Food & drink -->
   <section id="food" class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24">
     <div class="max-w-2xl">
-      <h2 class="font-display text-3xl sm:text-4xl text-lime text-balance">Fuel up for full time</h2>
-      <p class="mt-4 text-slate-300 leading-relaxed">Cold pints and proper food to see you through 90 minutes and extra time. Here&apos;s a taste of what&apos;s on.</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">Fuel up for full time</h2>
+      <p class="mt-4 text-slate-300 font-serif leading-relaxed">Cold pints and proper food to see you through 90 minutes and extra time. Here&apos;s a taste of what&apos;s on.</p>
     </div>
     <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/587594603_18374040469157132_7103974968039274038_n.jpg" alt="Sticky glazed wings served in bamboo steamer baskets" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Sticky Wings &amp; Ribs</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Sticky Wings &amp; Ribs</figcaption>
       </figure>
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/722953394_1615286803936124_1700217974624666056_n.jpg" alt="Grilled hot dog with crispy onions and chips" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Loaded Hot Dog &amp; Fries</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Loaded Hot Dog &amp; Fries</figcaption>
       </figure>
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/568734810_18369327835157132_8717799239132938186_n.jpg" alt="Crispy quesadillas with charred lime and dipping sauce" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Crispy Quesadillas</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Crispy Quesadillas</figcaption>
       </figure>
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/649423855_1523835156414623_7651592450907518201_n.jpg" alt="Chicken Caesar salad with bacon and parmesan" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Chicken Caesar Salad</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Chicken Caesar Salad</figcaption>
       </figure>
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/570399299_18369327856157132_1002739095048269371_n.jpg" alt="Grilled chicken salad bowl with broccoli and slaw" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Grilled Chicken Bowl</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Grilled Chicken Bowl</figcaption>
       </figure>
       <figure class="group rounded-2xl overflow-hidden border border-white/10 bg-ink-soft">
         <img src="img/569166900_18369327847157132_5327285489941636629_n.jpg" alt="Sticky ginger cake dessert with vanilla ice cream" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" />
-        <figcaption class="p-4 font-display text-lime">Sticky Ginger Cake</figcaption>
+        <figcaption class="p-4 font-display text-slate-100">Sticky Ginger Cake</figcaption>
       </figure>
     </div>
   </section>
@@ -213,20 +214,20 @@
   <section id="find-us" class="bg-ink-deep border-y border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="font-display text-3xl sm:text-4xl text-lime text-balance">Find Us</h2>
-        <p class="mt-4 text-slate-300 leading-relaxed">Right in the heart of Glasgow city centre &mdash; the perfect spot to watch every kick with the Tartan Army.</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">Find Us</h2>
+        <p class="mt-4 text-slate-300 font-serif leading-relaxed">Right in the heart of Glasgow city centre &mdash; the perfect spot to watch every kick with the Tartan Army.</p>
         <dl class="mt-8 space-y-5">
           <div>
             <dt class="text-xs font-semibold uppercase tracking-widest text-slate-400">Address</dt>
-            <dd class="mt-1 text-lg text-slate-100">The Smokin&apos; Fox, Glasgow City Centre</dd>
+            <dd class="mt-1 text-lg text-slate-100 font-serif">The Smokin&apos; Fox, Glasgow City Centre</dd>
           </div>
           <div>
             <dt class="text-xs font-semibold uppercase tracking-widest text-slate-400">Opening</dt>
-            <dd class="mt-1 text-lg text-slate-100">Open daily &mdash; extended hours on matchdays</dd>
+            <dd class="mt-1 text-lg text-slate-100 font-serif">Open daily &mdash; extended hours on matchdays</dd>
           </div>
           <div>
             <dt class="text-xs font-semibold uppercase tracking-widest text-slate-400">Bookings</dt>
-            <dd class="mt-1 text-lg text-slate-100">Advised to guarantee entry on matchday</dd>
+            <dd class="mt-1 text-lg text-slate-100 font-serif">Advised to guarantee entry on matchday</dd>
           </div>
         </dl>
         <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-lime px-7 py-3.5 font-display text-ink hover:brightness-95 transition">Book a Table</a>
@@ -240,8 +241,8 @@
   <!-- Final CTA -->
   <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-24 text-center">
     <img src="img/logo.jpg" alt="The Smokin' Fox wordmark" class="mx-auto h-24 w-auto rounded-2xl" />
-    <h2 class="mt-8 font-display text-3xl sm:text-5xl text-lime text-balance lime-shadow">This is where you&apos;ll want to be</h2>
-    <p class="mt-4 text-slate-300 leading-relaxed max-w-xl mx-auto">From kick-off to the final whistle, cheer on the Tartan Army with the best atmosphere in Glasgow. Book your table now.</p>
+    <h2 class="mt-8 font-display text-3xl sm:text-5xl text-white text-balance">This is where you&apos;ll want to be</h2>
+    <p class="mt-4 text-slate-300 font-serif leading-relaxed max-w-xl mx-auto">From kick-off to the final whistle, cheer on the <span class="text-lime">Tartan Army</span> with the best atmosphere in Glasgow. Book your table now.</p>
     <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-lime px-8 py-4 font-display text-ink hover:brightness-95 transition">Book Your Table</a>
   </section>
 
