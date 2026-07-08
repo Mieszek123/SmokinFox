@@ -24,7 +24,7 @@
             ink: '#1E2245',
             'ink-deep': '#171a36',
             'ink-soft': '#272c55',
-            lime: '#CEEE69',
+            rudy: '#F29331',
           },
           fontFamily: {
             display: ['Candal', 'system-ui', 'sans-serif'],
@@ -41,49 +41,47 @@
       background:
         linear-gradient(to top, rgba(23,26,54,0.96) 6%, rgba(30,34,69,0.55) 55%, rgba(30,34,69,0.75) 100%);
     }
-    .lime-shadow { text-shadow: 0 2px 24px rgba(206,238,105,0.18); }
+    .rudy-shadow { text-shadow: 0 2px 24px rgba(242, 147, 49, 0.18); }
   </style>
 </head>
-<body class="bg-ink text-slate-100 font-body antialiased selection:bg-lime selection:text-ink">
+<body class="bg-ink text-slate-100 font-body antialiased selection:bg-rudy selection:text-ink">
 
-  <!-- Header -->
   <header class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
       <a href="#top" class="flex items-center gap-3">
         <img src="img/logo 2.png" alt="The Smokin' Fox logo" class="h-10 w-auto sm:h-12" />
-        <span class="hidden sm:block font-display text-lime text-lg leading-none">The Smokin' Fox</span>
+        <span class="hidden sm:block font-display text-rudy text-lg leading-none">The Smokin' Fox</span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide text-slate-200">
-        <a href="#matches" class="hover:text-lime transition-colors">Fixtures</a>
-        <a href="#food" class="hover:text-lime transition-colors">Food &amp; Drink</a>
-        <a href="#find-us" class="hover:text-lime transition-colors">Find Us</a>
+        <a href="#matches" class="hover:text-rudy transition-colors">Fixtures</a>
+        <a href="#food" class="hover:text-rudy transition-colors">Food &amp; Drink</a>
+        <a href="#find-us" class="hover:text-rudy transition-colors">Find Us</a>
       </nav>
-      <a href="#book" class="inline-flex items-center rounded-full bg-lime px-5 py-2.5 text-sm font-display text-ink hover:brightness-95 transition">
+      <a href="#book" class="inline-flex items-center rounded-full bg-rudy px-5 py-2.5 text-sm font-display text-ink hover:brightness-95 transition">
         Book a Table
       </a>
     </div>
   </header>
 
-  <!-- Hero -->
   <section id="top" class="relative">
     <div class="relative min-h-[78vh] sm:min-h-[86vh] flex items-end">
       <img src="img/hero.jpg" alt="The Smokin' Fox hanging pub sign in Glasgow city centre" class="absolute inset-0 h-full w-full object-cover" />
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="relative mx-auto max-w-6xl w-full px-4 sm:px-6 pb-14 sm:pb-20">
-        <span class="inline-flex items-center gap-2 rounded-full border border-lime/40 bg-ink/60 px-4 py-1.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-lime">
+        <span class="inline-flex items-center gap-2 rounded-full border border-rudy/40 bg-ink/60 px-4 py-1.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-rudy">
           Live Sport &middot; Glasgow
         </span>
         <h1 class="mt-5 font-display text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] text-balance">
-          Watch Your <span class="text-lime lime-shadow">Best Matches</span> at the Fox!
+          Watch Your <span class="text-rudy rudy-shadow">Best Matches</span> at the Fox!
         </h1>
         <p class="mt-5 max-w-2xl text-base sm:text-xl text-slate-200 font-serif leading-relaxed text-pretty">
           Swing by and hang out at The Smokin&apos; Fox, a local pub and kitchen conveniently down the road from Glasgow Central Station. We&apos;re all about homely food, ice cold drinks and having a foxin&apos; good time.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#book" class="inline-flex items-center rounded-full bg-lime px-7 py-3.5 font-display text-ink hover:brightness-95 transition">
+          <a href="#book" class="inline-flex items-center rounded-full bg-rudy px-7 py-3.5 font-display text-ink hover:brightness-95 transition">
             Book Your Table
           </a>
-          <a href="#matches" class="inline-flex items-center rounded-full border border-white/25 px-7 py-3.5 font-display text-slate-100 hover:border-lime hover:text-lime transition">
+          <a href="#matches" class="inline-flex items-center rounded-full border border-white/25 px-7 py-3.5 font-display text-slate-100 hover:border-rudy hover:text-rudy transition">
             See the Fixtures
           </a>
         </div>
@@ -91,7 +89,6 @@
     </div>
   </section>
 
-  <!-- Booking (directly under hero) -->
   <section id="book" class="relative -mt-10 sm:-mt-14 z-10">
     <div class="mx-auto max-w-5xl px-4 sm:px-6">
       <div class="rounded-3xl bg-ink-soft border border-white/10 shadow-2xl shadow-black/40 overflow-hidden">
@@ -108,15 +105,15 @@
             <form class="mt-6 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault(); this.reset(); document.getElementById('book-confirm').classList.remove('hidden');">
               <div class="sm:col-span-1">
                 <label for="name" class="block text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Name</label>
-                <input id="name" name="name" type="text" required class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 placeholder-slate-500 focus:border-lime focus:outline-none focus:ring-2 focus:ring-lime/40" placeholder="Your name" />
+                <input id="name" name="name" type="text" required class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 placeholder-slate-500 focus:border-rudy focus:outline-none focus:ring-2 focus:ring-rudy/40" placeholder="Your name" />
               </div>
               <div class="sm:col-span-1">
                 <label for="phone" class="block text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Phone</label>
-                <input id="phone" name="phone" type="tel" required class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 placeholder-slate-500 focus:border-lime focus:outline-none focus:ring-2 focus:ring-lime/40" placeholder="Contact number" />
+                <input id="phone" name="phone" type="tel" required class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 placeholder-slate-500 focus:border-rudy focus:outline-none focus:ring-2 focus:ring-rudy/40" placeholder="Contact number" />
               </div>
               <div class="sm:col-span-1">
                 <label for="match" class="block text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Match</label>
-                <select id="match" name="match" class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 focus:border-lime focus:outline-none focus:ring-2 focus:ring-lime/40">
+                <select id="match" name="match" class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 focus:border-rudy focus:outline-none focus:ring-2 focus:ring-rudy/40">
                   <option>Scotland v Haiti &middot; 14 Jun</option>
                   <option>Scotland v Morocco &middot; 19 Jun</option>
                   <option>Scotland v Brazil &middot; 24 Jun</option>
@@ -128,13 +125,13 @@
               </div>
               <div class="sm:col-span-1">
                 <label for="guests" class="block text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Guests</label>
-                <input id="guests" name="guests" type="number" min="1" value="2" class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 focus:border-lime focus:outline-none focus:ring-2 focus:ring-lime/40" />
+                <input id="guests" name="guests" type="number" min="1" value="2" class="w-full rounded-xl bg-ink border border-white/15 px-4 py-3 text-slate-100 focus:border-rudy focus:outline-none focus:ring-2 focus:ring-rudy/40" />
               </div>
               <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
-                <button type="submit" class="inline-flex justify-center items-center rounded-full bg-lime px-7 py-3.5 font-display text-ink hover:brightness-95 transition">
+                <button type="submit" class="inline-flex justify-center items-center rounded-full bg-rudy px-7 py-3.5 font-display text-ink hover:brightness-95 transition">
                   Request Booking
                 </button>
-                <p id="book-confirm" class="hidden text-sm text-lime font-semibold">Thanks! We&apos;ll be in touch to confirm your table.</p>
+                <p id="book-confirm" class="hidden text-sm text-rudy font-semibold">Thanks! We&apos;ll be in touch to confirm your table.</p>
               </div>
             </form>
           </div>
@@ -143,26 +140,25 @@
     </div>
   </section>
 
-  <!-- Atmosphere / intro -->
   <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24">
     <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div>
-        <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">The biggest football <span class="text-lime">atmosphere</span> in the city centre</h2>
+        <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">The biggest football <span class="text-rudy">atmosphere</span> in the city centre</h2>
         <div class="mt-5 space-y-4 text-slate-300 font-serif leading-relaxed">
           <p>The Tartan Army is ready, Glasgow is ready, and we&apos;re gearing up for one of the biggest football atmospheres the city centre has seen in years.</p>
           <p>We&apos;ll be showing all the action live, with the pints pouring and the place bouncing from kick-off to the final whistle. Whether it&apos;s pre-match nerves or last-minute drama, this is where you&apos;ll want to be.</p>
         </div>
         <dl class="mt-8 grid grid-cols-3 gap-4">
           <div class="rounded-2xl bg-ink-soft border border-white/10 p-4 text-center">
-            <dt class="font-display text-2xl text-lime">HD</dt>
+            <dt class="font-display text-2xl text-rudy">HD</dt>
             <dd class="mt-1 text-xs text-slate-400 uppercase tracking-wide">Big Screens</dd>
           </div>
           <div class="rounded-2xl bg-ink-soft border border-white/10 p-4 text-center">
-            <dt class="font-display text-2xl text-lime">2017</dt>
+            <dt class="font-display text-2xl text-rudy">2017</dt>
             <dd class="mt-1 text-xs text-slate-400 uppercase tracking-wide">Est. Glasgow</dd>
           </div>
           <div class="rounded-2xl bg-ink-soft border border-white/10 p-4 text-center">
-            <dt class="font-display text-2xl text-lime">Live</dt>
+            <dt class="font-display text-2xl text-rudy">Live</dt>
             <dd class="mt-1 text-xs text-slate-400 uppercase tracking-wide">Every Match</dd>
           </div>
         </dl>
@@ -176,7 +172,6 @@
   </section>
 
 
-  <!-- Food & drink -->
   <section id="food" class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24">
     <div class="max-w-2xl">
       <h2 class="font-display text-3xl sm:text-4xl text-white text-balance">Fuel up for full time</h2>
@@ -210,7 +205,6 @@
     </div>
   </section>
 
-  <!-- Find us -->
   <section id="find-us" class="bg-ink-deep border-y border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
       <div>
@@ -230,7 +224,7 @@
             <dd class="mt-1 text-lg text-slate-100 font-serif">Advised to guarantee entry on matchday</dd>
           </div>
         </dl>
-        <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-lime px-7 py-3.5 font-display text-ink hover:brightness-95 transition">Book a Table</a>
+        <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-rudy px-7 py-3.5 font-display text-ink hover:brightness-95 transition">Book a Table</a>
       </div>
       <div class="rounded-3xl overflow-hidden border border-white/10">
         <img src="img/488250518_24192207600369754_6018518412999074172_n.jpg" alt="The Smokin' Fox team outside the Glasgow pub front" class="w-full h-72 sm:h-96 object-cover" />
@@ -238,33 +232,31 @@
     </div>
   </section>
 
-  <!-- Final CTA -->
   <section class="relative">
     <div class="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center">
       <img src="img/706794241_1598595422271929_8900547705696327507_n.jpg" alt="The Smokin' Fox pub atmosphere" class="absolute inset-0 h-full w-full object-cover" />
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="relative mx-auto max-w-4xl w-full px-4 sm:px-6 py-16 sm:py-24 text-center">
-        <div class="mx-auto h-28 w-28 sm:h-32 sm:w-32 rounded-full bg-ink flex items-center justify-center ring-1 ring-lime/25 shadow-2xl shadow-black/50 overflow-hidden">
+        <div class="mx-auto h-28 w-28 sm:h-32 sm:w-32 rounded-full bg-ink flex items-center justify-center ring-1 ring-rudy/25 shadow-2xl shadow-black/50 overflow-hidden">
           <img src="img/logo.jpg" alt="The Smokin' Fox wordmark" class="h-full w-full object-cover" />
         </div>
         <h2 class="mt-8 font-display text-3xl sm:text-5xl text-white text-balance">This is where you&apos;ll want to be</h2>
-        <p class="mt-4 text-slate-300 font-serif leading-relaxed max-w-xl mx-auto">From kick-off to the final whistle, cheer on the <span class="text-lime">Tartan Army</span> with the best atmosphere in Glasgow. Book your table now.</p>
-        <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-lime px-8 py-4 font-display text-ink hover:brightness-95 transition">Book Your Table</a>
+        <p class="mt-4 text-slate-300 font-serif leading-relaxed max-w-xl mx-auto">From kick-off to the final whistle, cheer on the <span class="text-rudy">Tartan Army</span> with the best atmosphere in Glasgow. Book your table now.</p>
+        <a href="#book" class="mt-8 inline-flex items-center rounded-full bg-rudy px-8 py-4 font-display text-ink hover:brightness-95 transition">Book Your Table</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-white/10 bg-ink-deep">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
         <img src="img/logo 2.png" alt="The Smokin' Fox logo" class="h-10 w-auto" />
-        <span class="font-display text-lime">The Smokin&apos; Fox &middot; Glasgow</span>
+        <span class="font-display text-rudy">The Smokin&apos; Fox &middot; Glasgow</span>
       </div>
       <nav class="flex items-center gap-6 text-sm text-slate-400">
-        <a href="#matches" class="hover:text-lime transition">Fixtures</a>
-        <a href="#food" class="hover:text-lime transition">Food &amp; Drink</a>
-        <a href="#book" class="hover:text-lime transition">Book</a>
+        <a href="#matches" class="hover:text-rudy transition">Fixtures</a>
+        <a href="#food" class="hover:text-rudy transition">Food &amp; Drink</a>
+        <a href="#book" class="hover:text-rudy transition">Book</a>
       </nav>
       <p class="text-xs text-slate-500">&copy; 2026 The Smokin&apos; Fox. All rights reserved.</p>
     </div>
